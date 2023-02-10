@@ -1,0 +1,102 @@
+import {StyleSheet} from "react-native";
+import { moderateScale } from "react-native-size-matters";
+import { colors } from "./utils";
+export const styles=StyleSheet.create({
+    defaultbutton:{
+        width:moderateScale(150),
+        height:moderateScale(50),
+        borderRadius:moderateScale(5),
+        alignItems:center,
+        justifyContent:center,
+        backgroundColor:colors.SECONDARYCOLOR,
+    },
+    transparentbutton:{
+        width:moderateScale(150),
+        height:moderateScale(50),
+        borderRadius:moderateScale(5),
+        alignItems:center,
+        justifyContent:center,
+        backgroundColor:'transparent',
+        borderColor:colors.GREYTEXTCOLOR
+    },
+    borderlessbutton:{
+
+    },
+    centerbutton:{
+
+    },
+    buttontext1:{
+        color:colors.TEXTCOLOR,
+        fontSize:moderateScale(16),
+    },
+    buttontext2:{
+        color:colors.GREYTEXTCOLOR,
+        fontSize:moderateScale(16)
+    },
+    inputContainer:{
+        width:'100%',
+        padding:10,
+    },
+    input:{
+        borderColor:"#D9E2EA",
+        borderRadius:moderateScale(25),
+        backgroundColor:colors.TEXTCOLOR,
+        height:moderateScale(50),
+    },
+    navbarContainer:{
+        height:moderateScale(70),
+        width:'100%',
+        backgroundColor:colors.BACKGROUNDCOLOR,
+        position:'relative'
+    },
+    navbarBottombar:{
+        height:moderateScale(50),
+        width:'100%',
+        backgroundColor:colors.TEXTCOLOR,
+        position:'absolute',
+        bottom:0,
+        flexDirection:'row',
+        justifyContent:'space-between',
+        alignItems:'center',
+        paddingHorizontal:moderateScale(20),
+    },
+    navbarRoundView:{
+        height:moderateScale(70),
+        width:moderateScale(70),
+        borderRadius:moderateScale(35),
+        borderwidth:10,
+        borderColor:colors.BACKGROUNDCOLOR,
+        backgroundColor:colors.TEXTCOLOR,
+        position:'absolute',
+        alignSelf:'center',
+        bottom:-moderateScale(20),
+    },
+    navbarRoundedButton:{
+        height:moderateScale(50),
+        with:moderateScale(50),
+        borderRadius:moderateScale(50),
+        backgroundColor:colors.SECONDARYCOLOR,
+        alignSelf:'center',
+        justifyContent:'center',
+        marginTop:moderateScale(10),
+    },
+    navbarButton:{
+        alignItems:'center'
+    },
+    loginContainer:{
+        width:'100%',
+        height:'auto',
+        padding:moderateScale(20),
+        justifyContent:'flex-end',
+        alignItems:'center',
+        backgroundColor:colors.PRIMARYCOLOR,
+    },
+    loginHeader:{
+        width:'100',
+        height:'auto',
+        padding:moderateScale(20),
+        marginBottom:moderateScale(60),
+        
+    }
+
+})
